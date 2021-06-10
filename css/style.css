@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none !important;
+    padding-inline-start: 0 !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: unset !important;
+}
+
+body {
+    color: rgba(6, 47, 135, 255) !important;
+}
+
+
+/* HEADER */
+
+.header {
+    padding: 2rem 0 1rem;
+}
+
+.menu-item a {
+    padding-left: 4rem;
+    font-size: 30px;
+    /* color: #023072; */
+    color: rgba(2, 48, 114, 255);
+}
+
+.banner {
+    border-top: 2px solid #f7a81b;
+}
+
+
+/* BODY */
+
+.illness-info {
+    padding: 2rem 0;
+}
+
+.illness-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    position: relative;
+    font-size: 60px;
+    line-height: 1;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+
+.illness-content .title::before {
+    content: '';
+    background: #ffdd9f;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.illness-content ul li {
+    font-size: 35px;
+    border: 2px solid #f7a81b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1rem;
+    margin: 3rem 0;
+}
+
+.illness-content ul li a {
+    position: relative;
+    display: block;
+    padding-left: 2rem;
+}
+
+.illness-content ul li a::before {
+    content: '';
+    background: #f7a81b;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 17px;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    font-size: 25px;
+    line-height: bold;
+    background: #e32526;
+    background-color: #e32526 !important;
+    border-color: #e32526 !important;
+    outline-color: #e32526 !important;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
