@@ -18,6 +18,12 @@ body {
     color: rgba(6, 47, 135, 255) !important;
 }
 
+p {
+    font-family: 'AdobeInvisFont';
+    font-size: 24px;
+    text-align: justify;
+}
+
 
 /* HEADER */
 
@@ -40,10 +46,10 @@ body {
 /* BODY */
 
 .illness-info {
-    padding: 2rem 0;
+    padding: 5rem 0;
 }
 
-.illness-content {
+.content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,9 +61,10 @@ body {
     line-height: 1;
     font-weight: bold;
     padding-left: 2rem;
+    z-index: 1;
 }
 
-.illness-content .title::before {
+.title::before {
     content: '';
     background: #ffdd9f;
     border-radius: 50%;
@@ -110,4 +117,13 @@ body {
     outline-color: #e32526 !important;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.product-info {
+    background: url(../images/background1.jpg) top no-repeat;
+    padding: 10rem 0 5rem;
+}
+
+.product-info h3 {
+    font-size: 35px;
 }
