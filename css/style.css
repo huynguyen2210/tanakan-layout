@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "MyriadPro";
+    src: url("../fonts/MyriadPro-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "MyriadPro Bold";
+    src: url("../fonts/MyriadPro-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-display: swap;
+}
+
 *,
 *::before,
 *::after {
@@ -18,8 +32,8 @@ body {
     color: rgba(6, 47, 135, 255) !important;
 }
 
-p {
-    font-family: 'AdobeInvisFont';
+* {
+    font-family: 'MyriadPro', sans-serif;
     font-size: 24px;
     text-align: justify;
 }
@@ -52,11 +66,12 @@ p {
 }
 
 .title {
+    font-family: 'MariadPro Bold', sans-serif;
     position: relative;
     font-size: 60px;
     line-height: 1;
     font-weight: bold;
-    padding-left: 2rem;
+    padding-left: 1.5rem;
     z-index: 1;
     margin: 1rem 0 3rem;
     text-align: left;
@@ -71,7 +86,7 @@ p {
     display: block;
     position: absolute;
     left: 0;
-    bottom: 0;
+    top: -15px;
     z-index: -1;
 }
 
@@ -96,18 +111,20 @@ p {
 }
 
 .illness-content ul li {
-    font-size: 35px;
     border: 2px solid #f7a81b;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 1rem;
-    margin: 3rem 0 0;
+    margin: 0 0 3rem 0;
 }
 
 .illness-content ul li a {
     position: relative;
+    text-align: left;
     display: block;
-    padding-left: 2rem;
+    font-size: 35px;
+    font-weight: 600;
+    padding-left: 1.5rem;
 }
 
 .illness-content ul li a::before {
@@ -119,7 +136,7 @@ p {
     display: block;
     position: absolute;
     left: 0;
-    top: 17px;
+    top: 15px;
 }
 
 .product-info {
@@ -127,15 +144,16 @@ p {
     padding: 10rem 0 5rem;
 }
 
-.product-info h3 {
+.product-info #product-title {
     font-size: 35px;
+    font-weight: 600;
+    text-align: left;
 }
 
 #accordion a {
-    font-family: 'MyriadPro';
-    font-size: 22px;
+    font-size: 24px;
+    font-weight: 600;
     color: #22499c;
-    text-transform: uppercase;
     display: block;
     position: relative;
     padding-left: 40px;
@@ -148,7 +166,7 @@ p {
     display: block;
     position: absolute;
     left: 0;
-    top: -2px;
+    top: 0;
     z-index: 1;
     text-align: center;
     font-size: 28px;
@@ -179,7 +197,7 @@ p {
 .highlight-news-content .card img {
     max-width: 100%;
     height: auto !important;
-    margin: 0 0 1rem 0;
+    margin: 0;
 }
 
 .highlight-news-content .card .card-body {
@@ -188,11 +206,10 @@ p {
 
 .highlight-news-content .card .card-body .card-title {
     max-width: 90%;
-    /* font-family: "UTMAvo Bold"; */
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1;
-    /* margin: 0 auto 10px; */
+    margin: 1rem 0;
     text-align: left;
 }
 
@@ -240,6 +257,7 @@ p {
 }
 
 .news-list-title {
+    font-weight: 600;
     font-size: 30px;
     line-height: 1;
 }
@@ -269,25 +287,53 @@ footer #footer-link {
 @media screen and (max-width: 992px) {
     .highlight-news-content .card {
         max-width: 100%;
-        margin: 2rem;
+        margin: 2rem 0;
     }
 }
 
 @media screen and (max-width: 576px) {
+    p {
+        font-size: 22px;
+    }
     .illness-info,
+    .product-info,
     .most-question,
     .highlight-news,
     .lasted-news {
-        padding: 2rem 0;
+        padding: 1rem 0;
+    }
+    .btn-primary {
+        margin-top: 2rem;
+    }
+    .illness-content ul li {
+        border: 2px solid #f7a81b;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 3rem 0 0;
+    }
+    .illness-content ul li a {
+        font-size: 30px;
+        padding-left: 1.5rem;
+    }
+    .illness-content ul li a::before {
+        top: 8px;
     }
     .title {
-        font-size: 38px;
+        font-size: 35px;
         padding-left: 1rem;
         margin: 2rem 0;
     }
     .title::before {
         width: 50px;
         height: 50px;
+        left: 0;
+        bottom: 0;
+    }
+    .news-list-title {
+        font-size: 24px;
+    }
+    .news-list-content {
+        font-size: 20px;
     }
     .menu-item {
         width: 100%;
@@ -297,5 +343,11 @@ footer #footer-link {
     .lasted-list-info {
         width: 100%;
         margin: 2rem 0;
+    }
+    footer #header-title {
+        font-size: 24px;
+    }
+    footer p {
+        font-size: 20px;
     }
 }
