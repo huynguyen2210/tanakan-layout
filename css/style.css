@@ -219,7 +219,13 @@ p {
     right: 1rem;
 }
 
+.lasted-news {
+    background: url(../images/background-last.jpg) no-repeat;
+    background-position: bottom;
+}
+
 .lasted-list {
+    background-color: #fff;
     border: 2px solid #f7a81b;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -240,6 +246,23 @@ p {
 .news-list-content {
     font-size: 22px;
     line-height: 1;
+}
+
+footer {
+    background-color: #002f87;
+    color: #fff;
+    font-size: 19px;
+    padding: 3rem 0;
+}
+
+footer #header-title {
+    font-size: 24px;
+}
+
+footer #email,
+footer #tel,
+footer #footer-link {
+    color: #f7a81b;
 }
 
 @media screen and (max-width: 992px) {
