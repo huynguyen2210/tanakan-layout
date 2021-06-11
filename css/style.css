@@ -242,7 +242,7 @@ p {
     line-height: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .highlight-news-content .card {
         max-width: 100%;
         margin: 2rem;
@@ -250,12 +250,8 @@ p {
 }
 
 @media screen and (max-width: 576px) {
-    .highlight-news-content .card {
-        max-width: 100%;
-        margin: 2rem;
-    }
     .lasted-list-info {
         width: 100%;
-        margin: 0;
+        margin: 2rem 0;
     }
 }
