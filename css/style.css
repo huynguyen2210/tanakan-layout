@@ -58,7 +58,7 @@ p {
     font-weight: bold;
     padding-left: 2rem;
     z-index: 1;
-    margin-bottom: 3rem;
+    margin: 1rem 0 3rem;
 }
 
 .title::before {
