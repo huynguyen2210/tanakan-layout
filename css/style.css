@@ -46,10 +46,25 @@ body {
 }
 
 .menu-item a {
-    padding-left: 4rem;
+    margin-left: 4rem;
+    padding: 0;
     font-size: 30px;
-    /* color: #023072; */
+    position: relative;
     color: rgba(2, 48, 114, 255);
+}
+
+.menu-item a:hover,
+.menu-item a:visited,
+.menu-item a:focus,
+.menu-item a:active {
+    /* border-bottom: 2px solid #f7a81b; */
+    /* background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(247, 168, 27, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    background-position: bottom;
+    background-size: 100% 4px; */
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 15%, rgba(247, 168, 27, 1) 50%, rgba(255, 255, 255, 1) 85%);
+    background-position: bottom;
+    background-size: 100% 4px;
+    background-repeat: no-repeat;
 }
 
 .banner {
@@ -90,20 +105,24 @@ body {
     z-index: -1;
 }
 
+.btn-primary a {
+    font-family: 'Mariad Bold', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
 .btn-primary,
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:visited,
 .btn-primary:focus {
-    font-size: 25px;
-    line-height: bold;
     background: #e32526;
     background-color: #e32526 !important;
     border-color: #e32526 !important;
     outline-color: #e32526 !important;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .illness-info {
@@ -115,7 +134,11 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 1rem;
-    margin: 0 0 3rem 0;
+    margin: 0 0 2rem 0;
+}
+
+.illness-content ul li:last-child {
+    margin-bottom: 0;
 }
 
 .illness-content ul li a {
@@ -141,7 +164,7 @@ body {
 
 .product-info {
     background: url(../images/background1.jpg) top no-repeat;
-    padding: 10rem 0 5rem;
+    padding: 6rem 0 2rem;
 }
 
 .product-info #product-title {
@@ -182,7 +205,7 @@ body {
 .most-question,
 .highlight-news,
 .lasted-news {
-    padding: 5rem 0;
+    padding: 2rem 0;
 }
 
 .highlight-news-content .card {
@@ -284,10 +307,43 @@ footer #footer-link {
     color: #f7a81b;
 }
 
+
+/* TIN TUC LAYOUT */
+
+.news-quote {
+    color: #e32526 !important;
+    position: relative;
+}
+
+.news-quote::before {
+    content: '';
+    background: #e32526;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    left: -1rem;
+    top: 12px;
+}
+
+.layout-news-page img {
+    border: 2px solid #f7a81b !important;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+
 @media screen and (max-width: 992px) {
     .highlight-news-content .card {
         max-width: 100%;
         margin: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #main-nav {
+        margin-top: 1rem;
     }
 }
 
