@@ -303,13 +303,16 @@ footer #footer-link {
         padding: 1rem 0;
     }
     .btn-primary {
-        margin-top: 2rem;
+        margin-top: 1.5rem;
     }
     .illness-content ul li {
         border: 2px solid #f7a81b;
         border-radius: 10px;
-        padding: 1rem;
-        margin: 3rem 0 0;
+        padding: 0.5rem;
+        margin: 1rem 0 0;
+    }
+    .illness-content ul li:first-child {
+        margin-top: 0;
     }
     .illness-content ul li a {
         font-size: 30px;
