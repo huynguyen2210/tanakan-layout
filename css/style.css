@@ -38,6 +38,11 @@ body {
     text-align: justify;
 }
 
+main {
+    background: url(../images/main-background.jpg) repeat-y;
+    background-size: contain;
+}
+
 
 /* HEADER */
 
@@ -83,10 +88,10 @@ body {
 .title {
     font-family: 'MariadPro Bold', sans-serif;
     position: relative;
-    font-size: 60px;
+    font-size: 45px;
     line-height: 1;
     font-weight: bold;
-    padding-left: 1.5rem;
+    padding-left: 1rem;
     z-index: 1;
     margin: 1rem 0;
     text-align: left;
@@ -96,8 +101,8 @@ body {
     content: '';
     background: #ffdd9f;
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     display: block;
     position: absolute;
     left: 0;
@@ -131,6 +136,7 @@ body {
 
 .illness-content ul li {
     border: 2px solid #f7a81b;
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 1rem;
@@ -260,7 +266,7 @@ body {
     right: 1rem;
 }
 
-.lasted-news {
+.last-section-homepage {
     background: url(../images/background-last.jpg) no-repeat;
     background-position: bottom;
 }
@@ -275,7 +281,7 @@ body {
 }
 
 .lasted-list-info {
-    margin: 1rem 2rem 2rem;
+    margin: 1rem 0.5rem 2rem;
     width: 65%;
 }
 
@@ -346,6 +352,13 @@ footer #footer-link {
     #main-nav {
         margin-top: 1rem;
     }
+    .news-list-title {
+        font-size: 26px;
+        margin-bottom: 0.5rem !important;
+    }
+    .news-list-content {
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -392,17 +405,17 @@ footer #footer-link {
     .news-list-title {
         font-size: 24px;
     }
-    .news-list-content {
-        font-size: 20px;
-    }
     .menu-item {
         width: 100%;
         text-align: right;
         margin-right: 1rem;
     }
+    .lasted-list {
+        padding: 0.5rem 1rem;
+    }
     .lasted-list-info {
         width: 100%;
-        margin: 2rem 0;
+        margin: 1rem 0 2rem;
     }
     footer #header-title {
         font-size: 24px;
