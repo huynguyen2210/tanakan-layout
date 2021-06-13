@@ -178,6 +178,7 @@ main {
     font-size: 35px;
     font-weight: 600;
     text-align: left;
+    line-height: 1;
 }
 
 #accordion a {
@@ -407,6 +408,9 @@ footer #footer-link {
         height: 50px;
         left: 0;
         bottom: 0;
+    }
+    .product-info #product-title {
+        margin-top: 1rem;
     }
     .news-list-title {
         font-size: 24px;
