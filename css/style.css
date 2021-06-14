@@ -358,6 +358,10 @@ footer #footer-link {
     top: 7px;
 }
 
+.question-page .body-collapse {
+    margin-left: 40px;
+}
+
 .question-page ul {
     list-style-type: disc;
     padding-inline-start: 3rem;
@@ -454,6 +458,9 @@ footer #footer-link {
         font-size: 20px;
     }
     /* OTHER LAYOUT */
+    .question-page .body-collapse {
+        margin-left: 0;
+    }
     .question-page ul {
         padding-inline-start: 1.5rem;
     }
