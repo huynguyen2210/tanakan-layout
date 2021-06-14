@@ -63,10 +63,6 @@ main {
 .menu-item a:visited,
 .menu-item a:focus,
 .menu-item a:active {
-    /* border-bottom: 2px solid #f7a81b; */
-    /* background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(247, 168, 27, 1) 50%, rgba(255, 255, 255, 1) 100%);
-    background-position: bottom;
-    background-size: 100% 4px; */
     background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 10%, rgba(247, 168, 27, 1) 50%, rgba(255, 255, 255, 1) 90%);
     background-position: bottom;
     background-size: 100% 4px;
@@ -89,7 +85,7 @@ main {
 .title {
     font-family: 'MariadPro Bold', sans-serif;
     position: relative;
-    font-size: 45px;
+    font-size: 40px;
     line-height: 1;
     font-weight: bold;
     padding-left: 1rem;
@@ -102,12 +98,12 @@ main {
     content: '';
     background: #ffdd9f;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     display: block;
     position: absolute;
     left: 0;
-    top: -15px;
+    top: -18px;
     z-index: -1;
 }
 
@@ -305,8 +301,14 @@ footer {
     padding: 3rem 0;
 }
 
+.footer-2 {
+    background-color: #f0f0f0;
+    color: #002f87;
+}
+
 footer #header-title {
     font-size: 24px;
+    font-weight: 700;
 }
 
 footer #email,
@@ -315,15 +317,27 @@ footer #footer-link {
     color: #f7a81b;
 }
 
+.footer-2 #email,
+.footer-2 #tel,
+.footer-2 #footer-link {
+    color: #002f87;
+    font-weight: 600;
+}
+
 
 /* OTHER LAYOUT */
 
-.highlight-quote {
-    color: #e32526 !important;
-    position: relative;
+.p-strong {
+    font-weight: 600;
 }
 
-.highlight-quote::before {
+.red-dot-highlight {
+    color: #e32526 !important;
+    position: relative;
+    font-weight: 600;
+}
+
+.red-dot-highlight::before {
     content: '';
     background: #e32526;
     border-radius: 50%;
@@ -362,7 +376,7 @@ footer #footer-link {
     margin-left: 40px;
 }
 
-.question-page ul {
+.list-decor {
     list-style-type: disc;
     padding-inline-start: 3rem;
 }
@@ -452,16 +466,18 @@ footer #footer-link {
         margin: 1rem 0 2rem;
     }
     footer #header-title {
-        font-size: 24px;
+        font-size: 22px;
     }
-    footer p {
-        font-size: 20px;
+    footer p,
+    footer span,
+    footer a {
+        font-size: 18px;
     }
     /* OTHER LAYOUT */
     .question-page .body-collapse {
         margin-left: 0;
     }
-    .question-page ul {
+    .list-decor {
         padding-inline-start: 1.5rem;
     }
 }
